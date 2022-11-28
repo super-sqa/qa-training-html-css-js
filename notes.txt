@@ -1,0 +1,11 @@
+
+
+* Colors in HTML can be words/RGB/hexadecimal
+* Sizes can be given, %/px/pt
+
+
+
+
+* Headings range from h1 to h6 (h1 being the biggest)
+* Adding style is done with inline css or css in a file. Example centering the header, color the header.
+*

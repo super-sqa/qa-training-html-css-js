@@ -4,6 +4,9 @@
 * Sizes can be given, %/px/pt
 
 
+* v1 is using inline styling
+* v2 has style info in "head" section
+* v2 has style in different file
 
 
 * Headings range from h1 to h6 (h1 being the biggest)

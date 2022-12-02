@@ -1,0 +1,17 @@
+.ctr_image {
+    text-align:center;
+}
+
+.bmw_img_1 {
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+}
+
+table {
+    background: white;
+}
+
+table, th, tr, td {
+    border:  1px solid green;
+}

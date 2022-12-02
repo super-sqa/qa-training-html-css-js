@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BMW Fan Page</title>
+</head>
+<body style="background: #d1d5f9; margin-left: 30px;">
+    <h1 style="text-align:center; color: blue;">BMW LOVE PAGE</h1>
+    <br>
+    <h3 style="text-align:center; color: #FFA500;">Fav Model: M6</h3>
+
+    <!-- Example of image -->
+    <div style="text-align:center;">
+        <img src="./images/BMW-MY23-M8Coupe.jpeg" width="50%" height="50%" style="border-radius: 20px">
+    </div>
+    <br>
+    <!-- Example of paragraphs -->
+    <div>
+        <p>This Example of a Paragraph.</p>
+        <p>This page is BMW love page. It is a demo of how much we love BMWs and showing which paticular models are our fav. Also more detail about BMWs</p>
+        <p>You can add any information you want to the page.</p>
+        <p>I hope you love BMWs as much as I do.</p>
+
+    </div>
+        <div>
+        <p>
+            This another Example of a <b>Paragraph</b>.
+            This page is <strong>BMW</strong> love page. It is a demo of how much we love BMWs and showing which particular models are our fav. Also more detail about BMWs
+        You can add any information you want to the page.
+        <i>I hope you love BMWs as much as I do.</i>
+        </p>
+
+    </div>
+    <br>
+
+    <div>
+        <a href="https://www.bmw.com/en/index.html" target="_blank"> Click here to go to BMW Home page </a>
+    </div>
+
+    <!-- Example of unordered list -->
+    <div>
+        <h5>Other favorite models in random order</h5>
+        <ul>
+            <li>M3</li>
+            <li>X7</li>
+            <li>i8</li>
+            <li>3 Series</li>
+        </ul>
+
+    <!-- Example of ordered list -->
+        <h5>Other favorite models in sorted order</h5>
+        <div>
+            <ol>
+                <li>i8</li>
+                <li>M3</li>
+                <li>X7</li>
+                <li>3 Series</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Example of tables  -->
+    <div>
+        <h3>Comparing Different Models</h3>
+        <!--   to style each cell we will have to add styling to each     -->
+        <table  border = "1">
+            <thead>
+                <tr><th>Model</th><th>MSRP</th><th>HP</th><th>MPG</th><th>0-60</th></tr>
+            </thead>
+            <tbody>
+            <tr><th>X1</th><td>$40,000</td><td>50</td><td>18</td><td>7 Sec</td></tr>
+            <tr><th>X1</th><td>$40,000</td><td>50</td><td>18</td><td>7 Sec</td></tr>
+            <tr><th>X1</th><td>$40,000</td><td>50</td><td>18</td><td>7 Sec</td></tr>
+            <tr><th>X1</th><td>$40,000</td><td>50</td><td>18</td><td>7 Sec</td></tr>
+            <tr><th>X1</th><td>$40,000</td><td>50</td><td>18</td><td>7 Sec</td></tr>
+            </tbody>
+        </table>
+    </div>
+<br>
+        <!-- Example of iframe  -->
+<div>
+    <iframe src="./for_iframe.html" style="height:300px;width:400px;" title="Iframe Example"></iframe>
+</div>
+
+<!-- Example of forms  -->
+<div>
+    <h3>Want to be a BMW Love member? Apply now!!</h3>
+<form action="./apply_membership.py">
+    <label for="f_name">First Name: </label>
+    <input type="text" id="f_name" name="f_name" placeholder="Your first name here">
+    <label for="l_name">Last Name: </label>
+    <input type="text" id="l_name" name="l_name" placeholder="Your last name here">
+    <br>
+    <br>
+    <label for="current_own">Do you own BMW?</label>
+    <input type="radio" name="current_own" value="yes"> yes
+    <input type="radio" name="current_own" value="no"> no
+    <br>
+    <br>
+    <label for="current_own">If Yes, what model?</label>
+    <select name="owned_model" disabled>
+        <option value="M3">M3</option>
+        <option value="X5">X5</option>
+        <option value="328">328</option>
+        <option value="other">other</option>
+    </select>
+    <br>
+    <br>
+    <label for="newsletter_signup">Send me daily newsletter</label>
+    <input type="checkbox" id="newsletter_signup" name="newsletter_signup"><br><br>
+    <input type="button" value="Apply">
+</form>
+</div> <!-- end form example -->
+
+
+    <!-- Example of JavaScript  -->
+        <br>
+    <div>
+        <h1>Examples of JS (Java Script)</h1>
+        <h3> JS Example 1</h3>
+        <button onclick="alert('Your First JS')">Click Me For Alert</button>
+        <br>
+        <h3> JS Example 2</h3>
+        <div id="result_container" >
+            <p>Test Result 1 = <span id="result">PENDING</span></p>
+        </div>
+        <button onclick='document.getElementById("result").innerHTML = "PASSED"'>passed</button>
+        <button onclick='document.getElementById("result").innerHTML = "FAILED"'>failed</button>
+        <br>
+
+        <h3> JS Example 3</h3>
+        <div id="result_container2" style="background: yellow; width: 200px;">
+            <p>Test Result 2 = <span id="result2">PENDING</span></p>
+        </div>
+        <button onclick='document.getElementById("result2").innerHTML = "PASSED"; document.getElementById("result_container2").style.backgroundColor = "green";'>passed</button>
+        <button onclick='document.getElementById("result2").innerHTML = "FAILED"; document.getElementById("result_container2").style.backgroundColor = "red";'>failed</button>
+        <br>
+
+        <h3> JS Example 4</h3>
+        <div id="result_container3" style="background: yellow; width: 200px;">
+            <p>Test Result 2 = <span id="result3">PENDING</span></p>
+        </div>
+        <button onclick='updateResult("PASSED")'>passed</button>
+        <button onclick='updateResult("FAILED")'>failed</button>
+        <script>
+            function updateResult(status){
+<!--                alert("Result Updated");-->
+                if ( status == "PASSED" ){
+                    document.getElementById("result3").innerHTML = "PASSED";
+                    document.getElementById("result_container3").style.backgroundColor = "green";
+                } else if ( status == "FAILED" ) {
+                    document.getElementById("result3").innerHTML = "FAILED";
+                    document.getElementById("result_container3").style.backgroundColor = "red";
+                } else {
+                    alert("Unexpected Status: " + status);
+                }
+
+            }
+        </script>
+
+    </div>  <!-- End of JS Examples -->
+
+</body>
+</html>
